@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: white;
+  padding: 16px;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body, input, button {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  flex: 1;
+  margin-bottom: 66px;
+}
+
+.message-wrapper {
+  display: flex;
+}
+
+.message {
+  margin-bottom: 16px;
+  color: white;
+  padding: 4px 8px;
+}
+
+.bot-message .message {
+  background-color: purple;
+}
+
+.bot-message .message-variant {
+  background-color: rgb(186, 115, 230);
+}
+
+.message-continuing {
+  margin-top: -16px;
+}
+
+.self-message {
+  justify-content: flex-end;
+}
+
+.self-message .message {
+  background-color: grey;
+}
+
+.self-message .message-variant {
+  background-color: black;
+}
+
+form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  padding: 16px;
+}
+
+.bottom-bar {
+  display: flex;
+}
+
+.username {
+  margin-right: 8px;
+}
+
+.username input {
+  width: auto;
+}
+
+.message-input {
+  flex: 1;
+}
+
+.message-input input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button {
+  margin-left: 8px;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus, button:focus {
+  background-color: black;
+  color: white;
+}
+
+.username-measure {
+  position: absolute;
+  visibility: hidden;
+}
